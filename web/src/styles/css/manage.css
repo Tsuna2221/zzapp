@@ -1,0 +1,49 @@
+.user-list-cell {
+  border-bottom: 1px solid #c2c2c2 !important; }
+  .user-list-cell:last-child {
+    border: none; }
+  .user-list-cell .user-details img {
+    width: 70px;
+    height: 70px; }
+  .user-list-cell.low img {
+    width: 50px;
+    height: 50px; }
+  .user-list-cell .right-details img {
+    width: 15px;
+    height: 15px; }
+
+.user-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 36px;
+  font-family: Lato;
+  color: #fff;
+  font-size: 14px;
+  background: #47525E;
+  border-radius: 6px;
+  margin: 0 8px; }
+  .user-btn.red {
+    background: #FF0004; }
+
+.mentor-switch {
+  flex-direction: row !important; }
+  .mentor-switch .switch {
+    transition: 0.2s ease;
+    width: 36px;
+    height: 22px;
+    background-color: #47525E;
+    justify-content: center; }
+    .mentor-switch .switch.inactive {
+      background-color: #ddd; }
+      .mentor-switch .switch.inactive .ball {
+        transform: translateX(0%); }
+    .mentor-switch .switch .ball {
+      transition: 0.2s ease;
+      transform: translateX(100%);
+      width: 16px;
+      height: 16px;
+      margin: 0 2px;
+      background-color: #fff; }

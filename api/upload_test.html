@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <label for="image">Upload</label>
+    <input type="file" id="file" name="image" accept="image/png, image/jpeg, .mp4">
+    <button onclick="upload()">Upload</button>
+</body>
+<script>
+    var file = document.getElementById("file")
+    
+    function upload(e){    
+        const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY2YTI2YTM3YTU4YWIzZDQ2Nzg0NmZkMGUxMDZhZDViMzk2ZDFjOWNlNGZkNGU3ZDZkYzZiOTE3ZGEzMWJjZjI4ZmY2NjY3MGM0NjY4NmE5In0.eyJhdWQiOiIxIiwianRpIjoiZjZhMjZhMzdhNThhYjNkNDY3ODQ2ZmQwZTEwNmFkNWIzOTZkMWM5Y2U0ZmQ0ZTdkNmRjNmI5MTdkYTMxYmNmMjhmZjY2NjcwYzQ2Njg2YTkiLCJpYXQiOjE1NjU5Mzk0NjUsIm5iZiI6MTU2NTkzOTQ2NSwiZXhwIjoxNTk3NTYxODY1LCJzdWIiOiIxMzgiLCJzY29wZXMiOltdfQ.ARSmvtxm4NFDAgeBRH8TRAUwK66K_ZBlmVBaTGuHDtwvit6i_j3PVgiGPjAVPfBe9WuxILCtxI8ch8VCQI-c7hJW1pwwUCa6FBtra2Rujv8GngK11lAm0puhJp55IuNVoCULE7-gzA8aB67043E3YLO958MTtLwq9f-2Xd57vWKOmGtfq8QxycAOyi0-C3NoM0PZhCBWbcVnR4HNnJBs3hfaRZXkXFdWzhnUpXGYVT1kX9Vp9WtFoqu-lsJcxARHY3GPQqBadfgybjJ3RCHyfiBwHqoXQxGxWHtlfq39y3OF94pFeKT-xBLIVnNrSQPoOmtI-N2bnjboYqeTMf2vdzl8kl_hzAxzJc9V9oSXPEMBkuBzOKLW_sHWOplSItmHWpfl3fT7Bt2FNt-4ehJHwBJ-mtMEVLs5rRCj2VwJIkcXi1d7oEpHnxBDnoDmetoS-VPXEYWQazn3zlGrY5RKqMCv5B-5LdFn8YgLRZRArQrA7e2FlZgm3YsKsmIA7XpGpMTPzdgQHlP7_0m2IzgObqsHC8wBkGV1Jl_tJTeHq-4K_3JRZBU3ZdE86wZTAmnOej0tWp-vThuKHc1bZSTXVz1uo4di3HEhpHJHYKf1IyImBeAGFDVtMXTqYh9wt03RSd_41B5KxTQcwVWAD4Lm5PrX1QVTDY055sXGkSWNsv4"
+        // const data = {
+        //     user_id: 138,
+        //     texto: "teste midia",
+        //     novo_check_in: false,
+        //     midia: file.files[0],
+        //     available_until: "2023-08-08 00:00:00"
+        // }
+            
+            
+        var fd = new FormData();
+        fd.append('avatar', file.files[0])
+
+        //axios.post("http://35.247.194.37/api/auth/user/feed/store", fd, { headers: { Authorization: "Bearer " + token, "Content-Type": "multipart/form-data" } }).catch(({response}) => console.log(response));
+        axios({
+            method: 'post',
+            url: 'http://35.247.194.37/api/auth/user/change-profile-picture',
+            data: { avatar: file.files[0] },
+            headers: {
+                "Authorization": "Bearer " + token
+            },
+        }).then(res => console.log(res)).catch(({response}) => console.log(response));
+    }
+    
+</script>
+</html>
+

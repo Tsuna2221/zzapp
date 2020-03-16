@@ -1,0 +1,80 @@
+.profile .images {
+  width: 100%;
+  height: 290px;
+  background-color: #13CE66; }
+  .profile .images .banner-edit-container {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    overflow: hidden; }
+    .profile .images .banner-edit-container img {
+      width: 30px;
+      height: 30px; }
+    .profile .images .banner-edit-container input {
+      position: absolute;
+      left: -100px;
+      height: 100%; }
+  .profile .images .edit {
+    width: 30px;
+    height: 30px;
+    overflow: hidden; }
+    .profile .images .edit input {
+      position: absolute;
+      width: 400px;
+      height: 100%;
+      left: -200px;
+      top: 0;
+      cursor: pointer; }
+  .profile .images .banner-edit {
+    right: 10px;
+    bottom: 10px; }
+
+.profile .avatar {
+  width: 176px;
+  height: 176px;
+  background-color: #FFC82C; }
+
+.profile .edit-profile-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  right: 10px; }
+
+.s {
+  width: 20px;
+  height: 21px; }
+
+.edit-modal {
+  background-color: #fff; }
+  .edit-modal form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.edit-input {
+  border: 1px solid #b4b4b4;
+  border-radius: 7px;
+  width: 300px;
+  padding: 10px;
+  outline: none; }
+  .edit-input.low {
+    width: 150px; }
+
+.edit-close {
+  width: 28px !important;
+  height: 28px !important; }
+
+.edit-save-btn {
+  bottom: 15px;
+  right: 15px; }
+
+.service-border {
+  transition: 0.2s ease;
+  border: 1px solid #b4b4b4;
+  border-bottom: none; }
+  .service-border.last {
+    border-bottom: 1px solid #b4b4b4; }
+  .service-border.selected {
+    background-color: #b4b4b4;
+    color: #fff; }

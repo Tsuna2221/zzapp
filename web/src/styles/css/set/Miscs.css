@@ -1,0 +1,87 @@
+.overflow-x-scroll {
+  overflow-x: scroll; }
+
+.overflow-y-scroll {
+  overflow-y: scroll; }
+
+.overflow-x-hide {
+  overflow-x: hidden; }
+
+.overflow-y-hide {
+  overflow-y: hidden; }
+
+.clickable {
+  cursor: pointer; }
+
+.no-outline {
+  outline: none; }
+
+.no-select {
+  user-select: none; }
+
+.no-events {
+  pointer-events: none; }
+
+.no-decoration {
+  text-decoration: none; }
+
+.no-opacity {
+  opacity: 0 !important; }
+
+.no-visibility {
+  visibility: hidden; }
+
+.no-cursor {
+  cursor: default; }
+
+.z-index-50 {
+  z-index: 50; }
+
+.z-index-100 {
+  z-index: 100; }
+
+.z-index-150 {
+  z-index: 150; }
+
+.z-index-200 {
+  z-index: 200; }
+
+.z-index-201 {
+  z-index: 201; }
+
+.z-index-202 {
+  z-index: 202; }
+
+.z-index-203 {
+  z-index: 203; }
+
+.z-index-204 {
+  z-index: 204; }
+
+.z-index-205 {
+  z-index: 205; }
+
+.bb {
+  border-bottom: 1px solid #c2c2c2; }
+  .bb:last-child {
+    border: none; }
+  .bb.white {
+    border-bottom-color: #fff; }
+
+.bball {
+  transition: 0.2s ease;
+  border-bottom: 3px solid #c2c2c2; }
+  .bball.medium {
+    border-bottom-width: 3px; }
+  .bball.white {
+    border-bottom-color: #fff; }
+  .bball.red {
+    border-bottom-color: #c00000; }
+  .bball.blue {
+    border-bottom-color: #0070c0; }
+  .bball.sorange {
+    border-bottom-color: #c45911; }
+  .bball.green {
+    border-bottom-color: #006600; }
+  .bball.transparent {
+    border-bottom-color: transparent; }

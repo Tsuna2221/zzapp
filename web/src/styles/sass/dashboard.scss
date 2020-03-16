@@ -1,0 +1,27 @@
+.config-input-container{
+    min-width: 140px;
+
+    .low{
+        width: 140px;
+    }
+}
+
+.config-input{
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 7px;
+    max-width: 140px;
+    padding: 8px 10px;
+    outline: none;
+    &.low{
+        width: 140px;
+    }
+    &.min{
+        width: 65px;
+    }
+}
+
+.save-config-btn{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}

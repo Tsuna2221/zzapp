@@ -1,0 +1,89 @@
+.requests{
+    .selector-container{
+
+        .cell-container{
+            flex-wrap: wrap;
+        }
+    
+        .cell{
+            user-select: none;
+            transition: 0.1s ease;
+            width: 155px;
+            height: 35px;
+            border: 1px solid #8492A6;
+            border-radius: 5px;
+            color: #AAB4C2;
+    
+            &.low{ width: 85px; }
+            &.selected{
+                background-color: #CB6133;
+                border: 1px solid #CB6133;
+                color: #fff;
+            }
+        }
+    }
+    .check-container{
+        transition: 0.2s ease;
+
+        &.hide{
+            margin-top: -100%;
+            opacity: 0;
+            pointer-events: none;
+        }
+        .check-total{
+            min-height: 180px;
+            max-height: 180px;
+            background-color: #CB6133;
+            transition: 0.2s ease;
+    
+            .confirm-request{
+                background-color: #fff;
+                width: 80px;
+                height: 80px;
+    
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    .sets-selection{
+        .green-plus{
+            width: 25px;
+            height: 25px;
+        }
+        .mini-btn{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.select-set{
+    background-color: #fff;
+
+    .sel-set-cell{
+        border-bottom: 1px solid rgb(194, 194, 194);
+        
+        &:last-child{
+            border: none;
+        }
+    }
+}
+
+.request-details{
+    background-color: #fff;
+}
+
+.date-input{
+    border: 1px solid #b4b4b4;
+    border-radius: 7px;
+    width: 150px;
+    padding: 10px;
+    outline: 0;
+    &::placeholder{
+        color: rgb(173, 173, 173);
+    }
+}

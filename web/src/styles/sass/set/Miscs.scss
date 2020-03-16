@@ -1,0 +1,79 @@
+//Overflow
+
+.overflow-x-scroll{overflow-x: scroll}
+
+.overflow-y-scroll{overflow-y: scroll}
+
+.overflow-x-hide{overflow-x: hidden}
+
+.overflow-y-hide{overflow-y: hidden}
+
+//Mics
+
+.clickable{cursor: pointer;}
+
+.no-outline{outline: none;}
+
+.no-select{user-select: none;}
+
+.no-events{pointer-events: none;}
+
+.no-decoration{text-decoration: none;}
+
+.no-opacity{opacity: 0 !important;}
+
+.no-visibility{visibility: hidden;}
+
+.no-cursor{cursor: default;}
+
+.z-index-50{z-index: 50;}
+
+.z-index-100{z-index: 100;}
+
+.z-index-150{z-index: 150;}
+
+.z-index-200{z-index: 200;}
+
+.z-index-201{z-index: 201;}
+
+.z-index-202{z-index: 202;}
+
+.z-index-203{z-index: 203;}
+
+.z-index-204{z-index: 204;}
+
+.z-index-205{z-index: 205;}
+
+.bb{
+    border-bottom: 1px solid rgb(194, 194, 194);
+    &:last-child{
+        border: none;
+    }
+
+    &.white{
+        border-bottom-color: #fff;
+    }
+}
+
+.bball{
+    transition: 0.2s ease;
+    border-bottom: 3px solid rgb(194, 194, 194);
+
+    &.medium{
+        border-bottom-width: 3px;
+    }
+
+    &.white{
+        border-bottom-color: #fff;
+    }
+
+    &.red{border-bottom-color: #c00000;}
+
+    &.blue{border-bottom-color: #0070c0;}
+
+    &.sorange{border-bottom-color: #c45911;}
+
+    &.green{border-bottom-color: #006600;}
+
+    &.transparent{border-bottom-color: transparent;}
+}
